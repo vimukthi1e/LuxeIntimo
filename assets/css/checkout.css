@@ -1,0 +1,91 @@
+/* ═══════════════════════════════════════════════════════════
+   LUXE INTIMO — checkout.css
+   Steps · address cascade · delivery/payment options · summary
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Steps bar ────────────────────────────────────────── */
+.steps-bar {
+  display: flex; gap: .52rem; margin-top: 1.15rem; max-width: 470px;
+}
+.step-item {
+  flex: 1; display: flex; flex-direction: column; align-items: center; gap: .38rem;
+  padding-top: .62rem; border-top: 2px solid var(--line);
+  font-size: .665rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--muted-2);
+}
+.step-item i {
+  width: 25px; height: 25px; border-radius: 50%;
+  background: var(--line); color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-style: normal; font-size: .715rem; font-weight: 700;
+}
+.step-item.done { border-top-color: var(--gold); color: var(--gold); }
+.step-item.done i { background: var(--gold); color: var(--ink); }
+.step-item.current { color: var(--gold-hi); }
+.step-item.current i {
+  background: transparent; border: 2px solid var(--gold); color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(201,169,97,.18);
+}
+
+/* ── Sections ─────────────────────────────────────────── */
+.checkout-section { margin-bottom: 1.15rem; }
+.checkout-head {
+  display: flex; align-items: center; gap: .78rem; margin-bottom: 1.25rem;
+}
+.checkout-head i {
+  width: 27px; height: 27px; border-radius: 50%; flex: none;
+  background: var(--gold-dim); color: var(--gold);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-style: normal; font-size: .775rem; font-weight: 700;
+}
+.checkout-head h3 { margin: 0; font-size: 1.285rem; }
+
+/* ── Saved address radio rows ─────────────────────────── */
+.saved-addrs { display: flex; flex-direction: column; gap: .62rem; margin-bottom: 1.25rem; }
+.saved-addrs .radio-row .grow { font-size: .885rem; }
+
+/* ── Delivery / payment options ───────────────────────── */
+.delivery-opts { display: flex; flex-direction: column; gap: .62rem; }
+.delivery-opts .radio-row { align-items: center; }
+.pay-brands { display: flex; gap: .32rem; opacity: .92; }
+.pay-brands svg { border-radius: 3px; }
+
+/* ── Review items ─────────────────────────────────────── */
+.review-items {
+  display: flex; flex-direction: column;
+}
+.review-items .list-row { padding: .78rem 0; }
+.review-items .list-row:first-child { padding-top: 0; }
+
+/* ── Address form (shared with account modal) ─────────── */
+.addr-form .cf-row {
+  display: grid; gap: 0 1.05rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 560px) { .addr-form .cf-row { grid-template-columns: 1fr 1fr; } }
+
+.addr-card .badge { vertical-align: middle; }
+
+/* ── Country locked field (shared) ────────────────────── */
+.cf-country {
+  display: flex; align-items: center; gap: .62rem;
+  padding: .82rem 1rem;
+  background: rgba(255,255,255,.028);
+  border: 1px solid var(--line); border-radius: var(--radius-s);
+  color: var(--muted); cursor: not-allowed; min-height: 46px;
+}
+.cf-flag { font-size: 1.12rem; line-height: 1; }
+.cf-country-name { font-size: .925rem; color: var(--bone); }
+.cf-lock { margin-left: auto; color: var(--muted-2); }
+
+/* ── Checkout summary ─────────────────────────────────── */
+.checkout-summary .panel, .cart-summary .panel { padding: 1.45rem; }
+.checkout-summary h3, .cart-summary h3 { margin-bottom: 1.05rem; }
+.checkout-summary .btn, .cart-summary .btn { margin-top: .72rem; }
+
+/* ── Inline two-column row (expiry/cvc, etc.) ─────────── */
+.cf-row {
+  display: grid; gap: 0 1.05rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 420px) { .cf-row { grid-template-columns: 1fr; } }

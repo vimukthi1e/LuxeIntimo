@@ -1,0 +1,125 @@
+/* ═══════════════════════════════════════════════════════════
+   LUXE INTIMO — auth.css
+   Sign up · Sign in · Forgot · OTP · password rules
+   ═══════════════════════════════════════════════════════════ */
+
+.auth-wrap {
+  display: flex; justify-content: center;
+  padding: clamp(1.65rem, 5vw, 3.65rem) var(--gutter) clamp(2.45rem, 7vw, 4.65rem);
+}
+.auth-card {
+  width: 100%; max-width: 512px;
+  background: var(--char);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-l);
+  padding: clamp(1.55rem, 4.6vw, 2.65rem);
+}
+.auth-head { margin-bottom: 1.65rem; }
+.auth-head h1 { margin: .32rem 0 .52rem; font-size: clamp(1.85rem, 5vw, 2.35rem); }
+.auth-alt {
+  text-align: center; margin: 1.55rem 0 0;
+  font-size: .885rem; color: var(--muted);
+}
+
+/* ── Email suggestion chips ───────────────────────────── */
+.email-chips {
+  display: flex; flex-wrap: wrap; gap: .32rem; margin-top: .12rem;
+}
+.email-chips .chip {
+  padding: .28rem .58rem; font-size: .665rem;
+  min-height: 44px; letter-spacing: .04em; opacity: .82;
+}
+.email-chips .chip:hover { opacity: 1; }
+
+/* ── Password toggle ──────────────────────────────────── */
+.input-wrap--pw .input { padding-right: 2.95rem; }
+.pw-toggle {
+  position: absolute; right: .28rem;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: transparent; border: 0; color: var(--muted-2);
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: color var(--t-fast);
+}
+.pw-toggle:hover, .pw-toggle.active { color: var(--gold); }
+
+/* ── Password rules checklist ─────────────────────────── */
+.pw-rules {
+  display: grid; gap: .38rem;
+  margin: .28rem 0 1.15rem;
+  padding: .82rem .95rem;
+  background: var(--ink-2); border: 1px solid var(--line-soft);
+  border-radius: var(--radius-s);
+}
+.pw-rule {
+  display: flex; align-items: center; gap: .52rem;
+  font-size: .785rem; color: var(--muted);
+  transition: color var(--t-fast);
+}
+.pw-rule .tick {
+  width: 17px; height: 17px; border-radius: 50%;
+  background: var(--line); color: transparent;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-style: normal; font-size: .625rem; flex: none;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+.pw-rule.ok { color: var(--ok); }
+.pw-rule.ok .tick { background: var(--ok); color: #fff; }
+.pw-rule.req-miss { color: var(--muted); }
+
+/* ── Strength meter ───────────────────────────────────── */
+.pw-strength { margin-bottom: 1.15rem; }
+.pw-strength .meter { margin-top: .38rem; height: 5px; }
+.pw-strength .meter > i {
+  transition: width var(--t-mid) var(--ease-out), background var(--t-mid);
+}
+
+/* ── Wizard steps (forgot password) ───────────────────── */
+.wizard-steps {
+  display: flex; gap: .52rem; margin-bottom: 1.55rem;
+}
+.wizard-step {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; gap: .38rem; text-align: center;
+  padding: .62rem .32rem;
+  border-top: 2px solid var(--line);
+  color: var(--muted-2); font-size: .685rem;
+  letter-spacing: .075em; text-transform: uppercase;
+}
+.wizard-step i {
+  width: 26px; height: 26px; border-radius: 50%;
+  background: var(--line); color: var(--muted);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-style: normal; font-size: .735rem; font-weight: 700;
+}
+.wizard-step.active { border-top-color: var(--gold); color: var(--gold); }
+.wizard-step.active i { background: var(--gold); color: var(--ink); }
+.wizard-step.done { border-top-color: var(--ok); color: var(--ok); }
+.wizard-step.done i { background: var(--ok); color: #fff; }
+
+/* ── OTP inputs ───────────────────────────────────────── */
+.otp-row {
+  display: flex; gap: .52rem; justify-content: center;
+  margin: 1.35rem 0 .35rem;
+}
+.otp-box {
+  width: clamp(42px, 11.5vw, 54px);
+  height: clamp(52px, 13vw, 62px);
+  text-align: center; font-size: 1.42rem; font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  background: var(--ink-2); border: 1px solid var(--line);
+  border-radius: var(--radius-s); color: var(--bone);
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.otp-box:focus {
+  outline: none; border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(201,169,97,.18);
+}
+.otp-devcode {
+  font-family: var(--font-mono); font-size: 1.42rem;
+  letter-spacing: .32em; color: var(--gold-hi);
+}
+
+/* ── Success icon block ───────────────────────────────── */
+.empty-icon.ok-icon {
+  background: var(--ok-soft); border-color: rgba(78,158,106,.36); color: var(--ok);
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0B0B0D">
+<meta name="description" content="LUXE INTIMO — Premium innerwear for Him & Her. Crafted for Sri Lanka. Discreet islandwide delivery.">
+<meta name="format-detection" content="telephone=no">
+<title>LUXE INTIMO — Premium Innerwear | Sri Lanka</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/base.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/components.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/pages.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/auth.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/checkout.css?v=1.3.0">
+<link rel="stylesheet" href="assets/css/payment.css?v=1.3.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B0B0D'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23C9A961' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════ ANNOUNCE BAR ══════════ -->
+<div class="announce" id="announceBar">
+  <div class="announce-track" id="announceTrack">
+    <span>FREE ISLANDWIDE DELIVERY OVER RS. 5,000</span>
+    <i>•</i>
+    <span>CASH ON DELIVERY AVAILABLE</span>
+    <i>•</i>
+    <span>100% DISCREET PACKAGING</span>
+    <i>•</i>
+    <span>7-DAY SIZE EXCHANGE</span>
+    <i>•</i>
+    <span>FREE ISLANDWIDE DELIVERY OVER RS. 5,000</span>
+    <i>•</i>
+    <span>CASH ON DELIVERY AVAILABLE</span>
+    <i>•</i>
+    <span>100% DISCREET PACKAGING</span>
+    <i>•</i>
+    <span>7-DAY SIZE EXCHANGE</span>
+    <i>•</i>
+  </div>
+</div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>
+    </button>
+
+    <a class="brand" href="#/" aria-label="Luxe Intimo home">
+      <span class="brand-a">LUXE</span><span class="brand-b">INTIMO</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#/shop?new=1">NEW IN</a>
+      <a href="#/shop?gender=women">WOMEN</a>
+      <a href="#/shop?gender=men">MEN</a>
+      <a href="#/shop?sort=best">BEST SELLERS</a>
+      <a href="#/about">ABOUT</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="#/wishlist" aria-label="Wishlist" title="Wishlist">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 20.5s-7.5-4.7-7.5-9.7A4.3 4.3 0 0 1 12 8.2a4.3 4.3 0 0 1 7.5 2.6c0 5-7.5 9.7-7.5 9.7z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg>
+        <span class="badge-dot" id="wishBadge" hidden>0</span>
+      </a>
+      <a class="icon-btn" href="#/account" aria-label="Account" title="Account">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8.5" r="3.4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4.8 19.5c1-3.4 3.8-5.2 7.2-5.2s6.2 1.8 7.2 5.2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+      </a>
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open bag" title="Bag">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        <span class="badge-count" id="cartCount" hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ MOBILE NAV DRAWER ══════════ -->
+<div class="drawer-layer" id="navDrawer" hidden>
+  <div class="drawer-scrim" data-close-drawer></div>
+  <aside class="drawer drawer-left" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="drawer-head">
+      <span class="brand"><span class="brand-a">LUXE</span><span class="brand-b">INTIMO</span></span>
+      <button class="icon-btn" data-close-drawer aria-label="Close menu">✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#/">Home</a>
+      <a href="#/shop?new=1">New In</a>
+      <a href="#/shop?gender=women">Women</a>
+      <a href="#/shop?gender=men">Men</a>
+      <a href="#/shop?category=combo">Combos</a>
+      <a href="#/shop?sort=best">Best Sellers</a>
+      <a href="#/wishlist">Wishlist</a>
+      <a href="#/about">About Us</a>
+    </nav>
+    <div class="drawer-foot">
+      <a class="btn btn-gold btn-block" href="#/account">My Account</a>
+      <p class="muted tiny">Discreet islandwide delivery · Sri Lanka</p>
+    </div>
+  </aside>
+</div>
+
+<!-- ══════════ MAIN ══════════ -->
+<main id="main" class="site-main" tabindex="-1">
+  <div id="app" class="app-root">
+    <div class="boot-splash">
+      <div class="boot-mark">LUXE <span>INTIMO</span></div>
+      <div class="boot-bar"><i></i></div>
+    </div>
+  </div>
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <div class="brand"><span class="brand-a">LUXE</span><span class="brand-b">INTIMO</span></div>
+      <p class="muted">Premium innerwear crafted for Sri Lanka. Breathable, seamless, and designed to feel like nothing — but look like everything.</p>
+      <div class="footer-badges">
+        <span>Discreet Packaging</span><span>Cash on Delivery</span><span>Islandwide Delivery</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#/shop?gender=women">Women</a>
+      <a href="#/shop?gender=men">Men</a>
+      <a href="#/shop?category=combo">Combo Packs</a>
+      <a href="#/shop?sort=best">Best Sellers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#/about">Size Guide</a>
+      <a href="#/about">Delivery &amp; Returns</a>
+      <a href="#/about">Privacy</a>
+      <a href="#/about">Terms</a>
+    </div>
+    <div class="footer-col">
+      <h4>Account</h4>
+      <a href="#/login">Sign In</a>
+      <a href="#/signup">Create Account</a>
+      <a href="#/orders">Order History</a>
+      <a href="#/addresses">Addresses</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>© <span id="yearNow">2026</span> LUXE INTIMO · Made in Sri Lanka</span>
+    <span class="footer-dev">
+      <span class="muted tiny">v1.0</span>
+      <button class="dev-dot" id="devDot" title="Developer tools" aria-label="Developer tools">•</button>
+    </span>
+  </div>
+</footer>
+
+<!-- ══════════ MOBILE TAB BAR ══════════ -->
+<nav class="tabbar" id="tabBar" aria-label="Mobile">
+  <a href="#/" data-tab="home"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 11.2 12 4.5l8 6.7V20h-5.2v-5H9.2v5H4z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span>Home</span></a>
+  <a href="#/shop" data-tab="shop"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="11" cy="11" r="6.2" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><span>Shop</span></a>
+  <a href="#/cart" data-tab="cart"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 8h12l-1 12H7L6 8z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" stroke="currentColor" stroke-width="1.5" fill="none"/></svg><span>Bag</span><i class="tab-badge" id="tabCartCount" hidden>0</i></a>
+  <a href="#/wishlist" data-tab="wishlist"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 20.5s-7.5-4.7-7.5-9.7A4.3 4.3 0 0 1 12 8.2a4.3 4.3 0 0 1 7.5 2.6c0 5-7.5 9.7-7.5 9.7z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></svg><span>Saved</span></a>
+  <a href="#/account" data-tab="account"><svg viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="8.5" r="3.4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M4.8 19.5c1-3.4 3.8-5.2 7.2-5.2s6.2 1.8 7.2 5.2" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg><span>Account</span></a>
+</nav>
+
+<!-- ══════════ OVERLAY ROOTS ══════════ -->
+<div class="drawer-layer" id="cartDrawer" hidden>
+  <div class="drawer-scrim" data-close-cart></div>
+  <aside class="drawer drawer-right" role="dialog" aria-modal="true" aria-label="Shopping bag">
+    <div class="drawer-head">
+      <h3 class="h-serif">Your Bag <span class="muted small" id="bagCountLabel"></span></h3>
+      <button class="icon-btn" data-close-cart aria-label="Close bag">✕</button>
+    </div>
+    <div class="drawer-body" id="bagBody"></div>
+    <div class="drawer-foot" id="bagFoot"></div>
+  </aside>
+</div>
+
+<div class="modal-layer" id="modalRoot" hidden>
+  <div class="modal-scrim" data-close-modal></div>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h3 class="h-serif" id="modalTitle"></h3>
+      <button class="icon-btn" data-close-modal aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-foot" id="modalFoot"></div>
+  </div>
+</div>
+
+<div class="toast-stack" id="toastStack" aria-live="polite" aria-atomic="false"></div>
+<div class="sr-only" id="liveRegion" aria-live="polite"></div>
+
+<!-- ══════════ SCRIPTS (load order locked — blueprint §6) ══════════ -->
+<script src="assets/js/core/utils.js?v=1.3.0"></script>
+<script src="assets/js/core/db.js?v=1.3.0"></script>
+<script src="assets/js/core/store.js?v=1.3.0"></script>
+<script src="assets/js/data/sri-lanka.js?v=1.3.0"></script>
+<script src="assets/js/data/products.js?v=1.3.0"></script>
+<script src="assets/js/data/email-domains.js?v=1.3.0"></script>
+<script src="assets/js/core/validators.js?v=1.3.0"></script>
+<script src="assets/js/core/api.js?v=1.3.0"></script>
+<script src="assets/js/services/cart.js?v=1.3.0"></script>
+<script src="assets/js/services/auth.js?v=1.3.0"></script>
+<script src="assets/js/services/order.js?v=1.3.0"></script>
+<script src="assets/js/services/payment.js?v=1.3.0"></script>
+<script src="assets/js/core/cardvalidator.js?v=1.3.0"></script>
+<script src="assets/js/core/router.js?v=1.3.0"></script>
+<script src="assets/js/ui/shell.js?v=1.3.0"></script>
+<script src="assets/js/ui/captcha.js?v=1.3.0"></script>
+<script src="assets/js/ui/cardform.js?v=1.3.0"></script>
+<script src="assets/js/pages/home.js?v=1.3.0"></script>
+<script src="assets/js/pages/shop.js?v=1.3.0"></script>
+<script src="assets/js/pages/product.js?v=1.3.0"></script>
+<script src="assets/js/pages/cartpage.js?v=1.3.0"></script>
+<script src="assets/js/pages/authpages.js?v=1.3.0"></script>
+<script src="assets/js/pages/account.js?v=1.3.0"></script>
+<script src="assets/js/pages/checkout.js?v=1.3.0"></script>
+<script src="assets/js/pages/paypage.js?v=1.3.0"></script>
+<script src="assets/js/pages/orderpage.js?v=1.3.0"></script>
+<script src="assets/js/pages/devpanel.js?v=1.3.0"></script>
+<script src="assets/js/app.js?v=1.3.0"></script>
+</body>
+</html>
